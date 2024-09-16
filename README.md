@@ -1,6 +1,6 @@
 # GumerovKanekoDuraiswamiInts2024
 
-[![Build Status](https://https://github.com/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![Build Status](https://github.com/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl/actions/workflows/CI.yml?query=branch%3Amain)
 [![codecov](https://codecov.io/gh/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl/graph/badge.svg?token=RDRQTBWQS3)](https://codecov.io/gh/FastBEAST/GumerovKanekoDuraiswamiInts2024.jl)
 
 This repository contains a Julia implementation of the algorithm presented in the following paper:
