@@ -9,13 +9,20 @@ The implementation also took inspiration from the already existing Matlab code p
 
 ## Available Integrals
 For the Laplace kernel
-$$G(\vec r,\vec r')\frac{1}{4\pi |\vec r - \vec r'|}\,,$$
+
+$$G(\vec x,\vec y) = \frac{1}{4\pi |\vec x - \vec y|}\,,$$
+
 the four integrals for the single layer, double layer, transposed double layer and hypersingular operator are available:
-$$L = \int_{S_y}\int_{S_x}G(\vec r, \vec r')dS(\vec r)dS(\vec r')\,,$$
-$$M = \int_{S_y}\int_{S_x}\vec n_{\vec r} \cdot\nabla_{\vec r} G(\vec r, \vec r')dS(\vec r)dS(\vec r')\,,$$
-$$L' = \int_{S_y}\vec n_{\vec r'} \cdot\nabla_{\vec r'}\int_{S_x} G(\vec r, \vec r')dS(\vec r)dS(\vec r')\,,$$
-$$M' = \int_{S_y}\vec n_{\vec r'} \cdot\nabla_{\vec r'}\int_{S_x} \vec n_{\vec r} \cdot\nabla_{\vec r}G(\vec r, \vec r')dS(\vec r)dS(\vec r')\,.$$
-Here, $\vec n_{\vec r}$ and $\vec n_{\vec r'}$ are the normal vectors of the flat triangles, and $\nabla_{\vec r}$ and $\nabla_{\vec r'}$ are the gradients with respect to position $\vec r$ and $\vec r'$.
+
+$$L = \int_{S_y}\int_{S_x}G(\vec x, \vec y)dS(\vec x)dS(\vec y),$$
+
+$$M = \int_{S_y}\int_{S_x}\vec n_{x} \cdot\nabla_{x} G(\vec x, \vec y)dS(\vec x)dS(\vec y),$$
+
+$$L' = \int_{S_y}\vec n_{y} \cdot\nabla_{y}\int_{S_x} G(\vec x, \vec y)dS(\vec x)dS(\vec y),$$
+
+$$M' = \int_{S_y}\vec n_{y} \cdot\nabla_{y}\int_{S_x} \vec n_{x} \cdot\nabla_{x}G(\vec x, \vec y)dS(\vec x)dS(\vec y).$$
+
+Here, $\vec n_{x}$ and $\vec n_{y}$ are the normal vectors of the flat triangles, and $\nabla_{x}$ and $\nabla_{y}$ are the gradients with respect to position $\vec x$ and $\vec y$.
 
 ## Example of Usage
 The package can be installed by
